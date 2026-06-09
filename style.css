@@ -240,6 +240,7 @@ a.active {
     cursor: pointer;
     font-size: 15px;
     background:var(--white);
+    color: var(--purple-600);
 }
 
 .search-btn:hover {
@@ -262,6 +263,7 @@ a.active {
 
 .hamburger {
     display:none;
+    color: var(--purple-600);
 }
 
 .mobile-menu {
@@ -576,7 +578,8 @@ a.active {
     position: absolute;
     top: 16px;
     right: 16px;
-    background: white;
+    background: transparent;
+    color: var(--white);
     border: none;
     width: 40px;
     height: 40px;
@@ -585,7 +588,6 @@ a.active {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: all 0.2s;
 }
 
@@ -869,12 +871,79 @@ a.active {
 .benefits-section {
         padding-block: 10px;
     }
+
+    .hero-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-images {
+         flex: initial;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 240px;
+    }
+
+    .large-image {
+        flex: 2;
+    }
+
+    .small-images {
+        flex: 2;
+        display: contents;
+    }
+
+    .small-image {
+        flex: 1;
+    }
+    
 }
 
 }
 
 @media (max-width: 600px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
+
+        .footer-grid {
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
     }
+    
+    .logo-col {
+        grid-column: 1 / -1;
+    }
+
+    .hero-images {
+        height: 120px;
+    }
+
+    .large-image,
+    .small-image {
+        flex: 1;
+    }
+
+    .small-images {
+        flex: 1;
+    }
+    .filters-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .filter-group,
+    .button-group {
+        width: 100%;
+        flex: none;
+        min-width: 0;
+    }
+
+    .search-filter-btn {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        padding: 0 10px;
+    }
+
 }
