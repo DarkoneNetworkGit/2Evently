@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evently - Hitta lokala evenemang du kommer älska</title>
+    <!-- Google Fonts Preconnect and Links for Variable Fonts: Inter and Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <div class="sitewrapper">
+    <!-- Header -->
+<header class="header">
+    <div class="header-inner">
+        <!-- Logo -->
+<div class="logo">
+    <a class="logo-link">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z" />
+        </svg>
+        <span>Evently</span>
+    </a>
+</div>
+
+        <!-- Navigation -->
+        <nav class="nav-menu">
+            <a class="active" href="#">Hem</a>
+            <a href="#">Evenemang</a>
+            <a href="#">Kategorier</a>
+            <a href="#">Om oss</a>
+            <a href="#">Kontakt</a>
+        </nav>
+
+        <!-- Right side -->
+        <div class="header-right">
+            <button class="search-btn">    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg></button>
+            <button class="create-account-btn">Skapa Konto</button>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Main content -->
+    <main>
+
+        <section class="hero">
+            <div class="content-wrapper">
+            <div class="hero-inner">
+            
+                <!-- Left Text Content -->
+                <div class="hero-content">
+                    <p class="tagline">Upptäck. Upplev. Minns.</p>
+                    
+                    <h1 class="hero-title">Hitta lokala evenemang du kommer älska</h1>
+                    
+                    <p class="hero-description">
+                        Från konserter och marknader till workshops och familjeaktiviteter. 
+                        Upptäck vad som händer nära dig.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn primary">Utforska evenemang</button>
+                        <button class="btn secondary">Se helgens tips</button>
+                    </div>
+                </div>
+            
+                <!-- Right Images -->
+                <div class="hero-images">
+                    <div class="large-image">
+                        <img src="img/1.jpg" alt="Stort evenemang">
+                    </div>
+                    <div class="small-images">
+                        <div class="small-image">
+                            <img src="img/2.jpg" alt="Evenemang 1">
+                        </div>
+                        <div class="small-image">
+                            <img src="img/3.jpg" alt="Evenemang 2">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        </section>
+
+ <section class="filters-section">
+    <div class="content-wrapper">
+        
+        <h2 class="section-title">Hitta rätt evenemang</h2>
+        
+        <div class="filters-row">
+            
+            <div class="filter-group">
+                <label for="search">Sökord</label>
+                <input type="text" id="search" placeholder="Sök på t.ex. konsert, yoga..." class="search-input">
+            </div>
+
+            <div class="filter-group">
+                <label for="category">Kategorier</label>
+                <select id="category" class="select-input">
+                    <option value="">Alla kategorier</option>
+                    <option value="konsert">Konsert</option>
+                    <option value="marknad">Marknad</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="familj">Familj</option>
+                    <option value="sport">Sport / Hälsa</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="date">Datum</label>
+                <input type="date" id="date" class="date-input">
+            </div>
+
+            <!-- Search Button - Fixed width -->
+            <div class="filter-group button-group">
+                <button class="search-filter-btn">Sök evenemang</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="popular-section">
+    <div class="content-wrapper">
+        
+        <div class="section-header">
+            <h2 class="section-title">Populära evenemang</h2>
+            <a href="#" class="see-all">Se alla evenemang &rarr;</a>
+        </div>
+
+        <div class="events-grid">
+            
+            <!-- Card 1 -->
+            <div class="event-card">
+                <div class="card-image">
+                    <img src="img/card1.jpg" alt="Indie Night med Nova Sun">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="category">Konsert</span>
+                        <span class="date">24 maj</span>
+                    </div>
+                    <h3 class="event-title">Indie Night med Nova Sun</h3>
+                    <p class="location">Pustervik, Göteborg</p>
+                </div>
+            </div>
+
+             <div class="event-card">
+                <div class="card-image">
+                    <img src="img/card2.jpg" alt="Indie Night med Nova Sun">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="category">Konsert</span>
+                        <span class="date">24 maj</span>
+                    </div>
+                    <h3 class="event-title">Indie Night med Nova Sun</h3>
+                    <p class="location">Pustervik, Göteborg</p>
+                </div>
+            </div>
+
+             <div class="event-card">
+                <div class="card-image">
+                    <img src="img/card3.jpg" alt="Indie Night med Nova Sun">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="category">Konsert</span>
+                        <span class="date">24 maj</span>
+                    </div>
+                    <h3 class="event-title">Indie Night med Nova Sun</h3>
+                    <p class="location">Pustervik, Göteborg</p>
+                </div>
+            </div>
+
+             <div class="event-card">
+                <div class="card-image">
+                    <img src="img/card4.jpg" alt="Indie Night med Nova Sun">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="category">Konsert</span>
+                        <span class="date">24 maj</span>
+                    </div>
+                    <h3 class="event-title">Indie Night med Nova Sun</h3>
+                    <p class="location">Pustervik, Göteborg</p>
+                </div>
+            </div>
+
+             <div class="event-card">
+                <div class="card-image">
+                    <img src="img/card5.jpg" alt="Indie Night med Nova Sun">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="category">Konsert</span>
+                        <span class="date">24 maj</span>
+                    </div>
+                    <h3 class="event-title">Indie Night med Nova Sun</h3>
+                    <p class="location">Pustervik, Göteborg</p>
+                </div>
+            </div>
+
+             <div class="event-card">
+                <div class="card-image">
+                    <img src="img/card6.jpg" alt="Indie Night med Nova Sun">
+                    <button class="favorite-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="category">Konsert</span>
+                        <span class="date">24 maj</span>
+                    </div>
+                    <h3 class="event-title">Indie Night med Nova Sun</h3>
+                    <p class="location">Pustervik, Göteborg</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="benefits-section">
+    <div class="content-wrapper">
+        
+        <div class="benefits-grid">
+            
+            <!-- Block 1 -->
+            <div class="benefit-card">
+                    <div class="icon-circle">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2z"></path>
+                    <line x1="9" y1="5" x2="9" y2="19"></line>
+                </svg>
+                </div>
+                <div class="benefit-text">
+                    <h3>Gratis & prisvärt</h3>
+                    <p>Hitta massor av evenemang som är gratis eller snälla mot plånboken.</p>
+                </div>
+            </div>
+
+            <!-- Block 2 -->
+            <div class="benefit-card">
+                <div class="icon-circle">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                </div>
+                <div class="benefit-text">
+                    <h3>För alla åldrar</h3>
+                    <p>Aktiviteter för både stora och små - hitta något som passar hela familjen.</p>
+                </div>
+            </div>
+
+            <!-- Block 3 - Add your third one here -->
+            <div class="benefit-card">
+                <div class="icon-circle">
+                    <svg class="m-1 text-emerald-800" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+    </div>
+                <div class="benefit-text">
+                    <h3>Nära dig</h3>
+                    <p>Upptäck evenemang i ditt område och stöd lokala arrangörer.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="content-wrapper">
+        
+        <div class="footer-grid">
+            
+            <!-- Left Column - Logo + Description + Social -->
+            <div class="footer-col logo-col">
+                <div class="logo">
+                    <a href="#" class="logo-link">
+                        <!-- Your SVG logo here -->
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z" />
+                        </svg>
+                        <span>Evently</span>
+                    </a>
+                </div>
+                
+                <p class="footer-description">
+                    Evently samlar lokala evenemang så att du enkelt kan upptäcka, planera och dela upplevelser som berikar din vardag.
+                </p>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#" class="social-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h4>Utforska</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Alla evenemang</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Helgens tips</a></li>
+                    <li><a href="#">Populära</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h4>Om Evently</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">För arrangörer</a></li>
+                    <li><a href="#">Vanliga frågor</a></li>
+                    <li><a href="#">Nyheter</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <ul class="footer-contact">
+                    <li>info@evently.se</li>
+                    <li>031-123 45 67</li>
+                    <li>Stora Badhusgatan 18</li>
+                    <li>411 21 Göteborg</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    </div>
+
+
+    <!-- hamburger icon -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <line x1="4" y1="6" x2="20" y2="6"></line>
+        <line x1="4" y1="18" x2="20" y2="18"></line>
+    </svg>
+
+  
+</body>
+
+</html>
