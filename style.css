@@ -286,6 +286,10 @@ a.active {
     font-weight: 600;
 }
 
+.mobile-menu a:hover {
+    color: var(--purple-600);
+}
+
 .mobile-menu.open {
     display: flex;
 }
